@@ -1,0 +1,52 @@
+textarea {
+    flex-grow: 1;
+    width: 100%;
+    margin-bottom: 3vh;
+    padding: calc(0.5vh + 0.5vw);
+    box-sizing: border-box;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border: 1px solid #ccc;
+    border-radius: calc(0.5vh + 0.5vw);
+    background-color: transparent;
+    color: #212121;
+    caret-color: #ccc;
+    resize: none;
+    outline: none;
+
+    font-family: 'Overlock';
+    font-size: xx-large;
+    text-align: justify;
+}
+
+textarea:focus {
+    border: 2px solid black;
+}
+
+textarea::placeholder {
+    color: black;
+    font-size: xx-large;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 1000px) {
+    textarea {
+        font-size: x-large;
+    }
+
+    textarea::placeholder {
+        font-size: x-large;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    textarea {
+        border-radius: 6px;
+        font-size: large;
+
+    }
+
+    textarea::placeholder {
+        font-size: large;
+    }
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TextUtils</title>
+    <link rel="stylesheet" type="text/css" href="css\Body.css">
+    <link rel="stylesheet" type="text/css" href="css\Navbar.css">
+    <link rel="stylesheet" type="text/css" href="css\MainBody.css">
+    <link rel="stylesheet" type="text/css" href="css\TextInput.css">
+    <link rel="stylesheet" type="text/css" href="css\Buttons.css">
+    <link rel="stylesheet" type="text/css" href="css\Summary.css">
+    <script src="js\logic.js"></script>
+    <link rel="stylesheet" type="text/css" href="font\Font.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <h1 id="header">TextUtils</h1>
+    </nav>
+    <div class="mainbody">
+        <div class="textandbutton">
+            <textarea id="textInput" placeholder="Enter text" oninput="countWordsAndCharacters()"></textarea>
+            <div class=" buttons">
+                <div class="row">
+                    <button name="copy" onclick="copyToClipboard()">Copy</button>
+                    <button name="clear" onclick="clearText()">Clear</button>
+                </div>
+                <div class="row">
+                    <button onclick="convertToUpperCase()">Upper Case</button>
+                    <button onclick="convertToLowerCase()">Lower Case</button>
+                    <button onclick="convertToPascalCase()">Pascal Case</button>
+                    <button onclick="convertToCamelCase()">Camel Case</button>
+                    <button onclick="convertToSnakeCase()">Snake Case</button>
+                    <button onclick="convertToKebabCase()">Kebab Case</button>
+                    <button onclick="reverseText()">Reverse</button>
+                </div>
+                <div class="row">
+                    <button onclick="removeSpace()">Remove Space</button>
+                    <button onclick="removeExtraSpace()">Remove Extra Space</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="summary">
+        <h1>Text Summary:</h1>
+        <div id="counter">
+            <p>Words: 0, Characters: 0</p>
+        </div>
+    </div>
+</body>
+
+</html>

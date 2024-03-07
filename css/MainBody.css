@@ -1,0 +1,23 @@
+div.mainbody {
+    flex-grow: 1;
+    border: 0;
+    margin: 4vh 6vw;
+
+    border-radius: calc(0.5vh + 0.5vw);
+    padding: 3vh 3vw;
+    background-color: #476472;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+
+}
+
+div.textandbutton {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+@media screen and (max-width: 600px) {
+    div.mainbody {
+        border-radius: 6px;
+    }
+}

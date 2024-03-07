@@ -1,0 +1,28 @@
+.navbar {
+    background-color: #2c3e50;
+    color: #cccccc;
+    padding: 2vh 3vw;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+#header {
+    margin: 0;
+    font-size: 50px;
+    font-family: 'Indie Flower';
+    align-items: center;
+    text-shadow: 7px 7px 4px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 1000px) {
+    #header {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #header {
+        font-size: 30px;
+    }
+}
